@@ -7,7 +7,7 @@ from .db import Base, engine, get_db
 from .models import Item
 
 app = FastAPI(title="Mini Kube App")
-
+##########################
 # Simple retry loop to ensure DB is ready before creating tables
 def wait_for_db(max_attempts: int = 30, delay_seconds: float = 1.0):
     last_err = None
